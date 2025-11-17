@@ -1,0 +1,402 @@
+[2025-11-17 14:18:52,466] ZLSpnS9Gp3hOqIL/INFO/locust.main: Starting Locust 2.42.3
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/INFO/locust.main: Run time limit set to 10 seconds
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/INFO/locust.runners: Ramping to 100 users at a rate of 10.00 per second
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 10} (10 total users)
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 0} already running)...
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 10 users spawned
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 10 still running
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,470] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,482] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,483] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,483] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,484] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,485] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,485] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,485] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:52,667] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,024] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,100] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,102] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,104] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,116] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,116] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,117] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 178763
+[2025-11-17 14:18:53,196] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,196] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,196] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,366] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,438] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,460] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,464] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,475] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 20} (20 total users)
+[2025-11-17 14:18:53,475] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 10} already running)...
+[2025-11-17 14:18:53,477] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 20 users spawned
+[2025-11-17 14:18:53,477] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:53,477] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 20 still running
+[2025-11-17 14:18:53,478] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,479] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,479] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,479] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:53,487] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,489] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,544] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,554] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,997] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "PUT /api/update/7c93a5ed-772c-44ea-ba81-94c2fb2199a3 HTTP/1.1" 200 0
+[2025-11-17 14:18:53,997] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,997] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:53,997] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,997] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179295
+[2025-11-17 14:18:53,997] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/73e9849c-1529-4d15-992a-e4e04a1d5055 HTTP/1.1" 200 132
+[2025-11-17 14:18:54,207] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "PUT /api/update/42290c99-73a3-47bd-8eb2-1e0a0f1c76c4 HTTP/1.1" 200 0
+[2025-11-17 14:18:54,208] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 179542
+[2025-11-17 14:18:54,332] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,337] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,339] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,340] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,352] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,352] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,352] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,400] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,404] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,405] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180473
+[2025-11-17 14:18:54,457] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,492] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 30} (30 total users)
+[2025-11-17 14:18:54,493] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 20} already running)...
+[2025-11-17 14:18:54,493] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 30 users spawned
+[2025-11-17 14:18:54,493] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:54,493] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 30 still running
+[2025-11-17 14:18:54,495] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,495] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,495] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,497] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,497] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,498] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,498] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,499] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,499] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,499] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:54,671] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180726
+[2025-11-17 14:18:54,842] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:54,842] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180726
+[2025-11-17 14:18:54,847] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180726
+[2025-11-17 14:18:54,849] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180726
+[2025-11-17 14:18:54,849] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180726
+[2025-11-17 14:18:55,047] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180859
+[2025-11-17 14:18:55,050] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180992
+[2025-11-17 14:18:55,051] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,051] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180992
+[2025-11-17 14:18:55,055] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180859
+[2025-11-17 14:18:55,056] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 180859
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 40} (40 total users)
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 30} already running)...
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 40 users spawned
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 40 still running
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "PUT /api/update/d97d4e75-0c84-4c95-867a-9c7fa02a40bc HTTP/1.1" 200 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,491] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:55,705] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/f306d89b-96d3-4476-8f32-a82d3e10d5ae HTTP/1.1" 200 132
+[2025-11-17 14:18:55,706] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/11d650ba-978b-41fa-ac8a-e92740a4e2a4 HTTP/1.1" 200 132
+[2025-11-17 14:18:55,930] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/fb560156-8817-4efd-9b23-07d9cd341026 HTTP/1.1" 200 132
+[2025-11-17 14:18:55,930] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182186
+[2025-11-17 14:18:55,934] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/73e9849c-1529-4d15-992a-e4e04a1d5055 HTTP/1.1" 200 0
+[2025-11-17 14:18:55,934] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182186
+[2025-11-17 14:18:56,340] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:56,341] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:56,341] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/86f039f3-9ff9-4ba0-92b4-5334df530d85 HTTP/1.1" 200 0
+[2025-11-17 14:18:56,341] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,343] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,344] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,344] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,345] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,345] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/bb60e7bd-cf5e-4dee-a0db-3f9376e4d776 HTTP/1.1" 200 132
+[2025-11-17 14:18:56,351] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,355] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/4e347fdb-1665-4756-a48f-4b242b746558 HTTP/1.1" 200 132
+[2025-11-17 14:18:56,355] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182053
+[2025-11-17 14:18:56,511] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 50} (50 total users)
+[2025-11-17 14:18:56,513] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 40} already running)...
+[2025-11-17 14:18:56,514] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 50 users spawned
+[2025-11-17 14:18:56,514] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:56,514] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 50 still running
+[2025-11-17 14:18:56,516] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,526] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,534] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,535] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,535] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,537] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,537] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,538] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,539] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,539] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:56,573] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182160
+[2025-11-17 14:18:56,795] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182160
+[2025-11-17 14:18:56,798] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182160
+[2025-11-17 14:18:56,807] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182160
+[2025-11-17 14:18:57,179] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182426
+[2025-11-17 14:18:57,183] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,183] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,258] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182160
+[2025-11-17 14:18:57,260] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/6147bf63-d438-4157-af4b-f00a22429670 HTTP/1.1" 200 0
+[2025-11-17 14:18:57,260] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,260] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,260] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/f861dc73-eac4-4cc2-81c3-1694bac5e4c3 HTTP/1.1" 200 0
+[2025-11-17 14:18:57,260] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,260] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182426
+[2025-11-17 14:18:57,266] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 182160
+[2025-11-17 14:18:57,266] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,266] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 60} (60 total users)
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 50} already running)...
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 60 users spawned
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 60 still running
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,523] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,538] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:57,708] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,709] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,710] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,710] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183216
+[2025-11-17 14:18:57,710] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183216
+[2025-11-17 14:18:57,710] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:57,714] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,075] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/59999585-7289-4a53-a06f-633386d8d9a6 HTTP/1.1" 200 0
+[2025-11-17 14:18:58,152] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,152] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/d762e736-2dcb-44d6-bea7-9689e735714d HTTP/1.1" 200 132
+[2025-11-17 14:18:58,153] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/d97d4e75-0c84-4c95-867a-9c7fa02a40bc HTTP/1.1" 200 129
+[2025-11-17 14:18:58,153] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "PUT /api/update/11d650ba-978b-41fa-ac8a-e92740a4e2a4 HTTP/1.1" 200 0
+[2025-11-17 14:18:58,153] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183589
+[2025-11-17 14:18:58,153] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/50f6177e-8a0c-40bc-bfa5-94e5a4d166ef HTTP/1.1" 200 0
+[2025-11-17 14:18:58,153] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,153] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/fb560156-8817-4efd-9b23-07d9cd341026 HTTP/1.1" 200 132
+[2025-11-17 14:18:58,529] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 70} (70 total users)
+[2025-11-17 14:18:58,529] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 60} already running)...
+[2025-11-17 14:18:58,530] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 70 users spawned
+[2025-11-17 14:18:58,531] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:58,531] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 70 still running
+[2025-11-17 14:18:58,532] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,533] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,534] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,536] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,536] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,537] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,538] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,540] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,541] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,541] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:58,581] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/1e54b974-01af-400e-8ef6-fe08d726565d HTTP/1.1" 200 0
+[2025-11-17 14:18:58,583] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,583] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,585] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,585] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/2ee82c2b-5b7b-40f0-b26f-ce6b8a854274 HTTP/1.1" 200 0
+[2025-11-17 14:18:58,585] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,585] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183307
+[2025-11-17 14:18:58,585] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183573
+[2025-11-17 14:18:58,988] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183555
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 183555
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/7c93a5ed-772c-44ea-ba81-94c2fb2199a3 HTTP/1.1" 200 0
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:58,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,385] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,387] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,388] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,388] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 184473
+[2025-11-17 14:18:59,389] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,390] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,406] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/42290c99-73a3-47bd-8eb2-1e0a0f1c76c4 HTTP/1.1" 200 129
+[2025-11-17 14:18:59,413] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 184220
+[2025-11-17 14:18:59,539] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 80} (80 total users)
+[2025-11-17 14:18:59,539] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 70} already running)...
+[2025-11-17 14:18:59,543] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 80 users spawned
+[2025-11-17 14:18:59,543] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:18:59,543] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 80 still running
+[2025-11-17 14:18:59,546] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,550] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,552] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,557] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,557] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,557] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,561] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,561] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,561] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,561] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:18:59,746] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,840] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,841] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/52915745-de20-4661-99ea-ec5ac96c344f HTTP/1.1" 200 132
+[2025-11-17 14:18:59,841] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:18:59,841] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185117
+[2025-11-17 14:18:59,872] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185117
+[2025-11-17 14:18:59,873] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185117
+[2025-11-17 14:18:59,875] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 184992
+[2025-11-17 14:19:00,257] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,268] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185250
+[2025-11-17 14:19:00,268] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185508
+[2025-11-17 14:19:00,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185383
+[2025-11-17 14:19:00,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read/bb60e7bd-cf5e-4dee-a0db-3f9376e4d776 HTTP/1.1" 200 132
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 90} (90 total users)
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 10} ({"CRUDUser": 80} already running)...
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 90 users spawned
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 90 still running
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,542] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,544] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,544] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,545] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,545] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,545] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,545] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,545] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,547] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:3000
+[2025-11-17 14:19:00,661] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/4ef2ddd2-c537-4da1-b8d8-a763691e78d7 HTTP/1.1" 200 0
+[2025-11-17 14:19:00,662] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,662] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,662] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 185766
+[2025-11-17 14:19:00,662] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,662] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:00,666] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:01,003] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "PUT /api/update/730f37c5-efbc-4979-9afe-de4cae04ebdf HTTP/1.1" 200 0
+[2025-11-17 14:19:01,079] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "DELETE /api/delete/6d362dce-11fb-47a4-92d6-c32b2cecf0e5 HTTP/1.1" 200 0
+[2025-11-17 14:19:01,080] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:01,081] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 186428
+[2025-11-17 14:19:01,083] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:01,083] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:01,084] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "POST /api/create HTTP/1.1" 201 0
+[2025-11-17 14:19:01,084] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 186428
+[2025-11-17 14:19:01,085] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:3000 "GET /api/read HTTP/1.1" 200 186431
+[2025-11-17 14:19:01,239] ZLSpnS9Gp3hOqIL/INFO/locust.main: --run-time limit reached, shutting down
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping all users (called from C:\Users\pm018586\AppData\Local\anaconda3\Lib\site-packages\locust\runners.py:551)
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-0
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-1
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-2
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-3
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-4
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-5
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-6
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-7
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-8
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-9
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-10
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-11
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-12
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-13
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-14
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-15
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-16
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-17
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-18
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-19
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-20
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-21
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-22
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-23
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-24
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-25
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-26
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-27
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-28
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-29
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-30
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-31
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-32
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-33
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-34
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-35
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-36
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-37
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-38
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-39
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-40
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-41
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-42
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-43
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-44
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-45
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-46
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-47
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-48
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-49
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-50
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-51
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-52
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-53
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-54
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-55
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-56
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-57
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-58
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-59
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-60
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-61
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-62
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-63
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-64
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-65
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-66
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-67
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-68
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-69
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-70
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-71
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-72
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-73
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-74
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-75
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-76
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-77
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-78
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-79
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-80
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-81
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-82
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-83
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-84
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-85
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-86
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-87
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-88
+[2025-11-17 14:19:01,398] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-89
+[2025-11-17 14:19:01,414] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 90 users have been stopped, 0 still running
+[2025-11-17 14:19:01,414] ZLSpnS9Gp3hOqIL/DEBUG/locust.main: Running teardowns...
+[2025-11-17 14:19:01,416] ZLSpnS9Gp3hOqIL/INFO/locust.main: Shutting down (exit code 0)
+[2025-11-17 14:19:01,416] ZLSpnS9Gp3hOqIL/DEBUG/locust.main: Cleaning up runner...

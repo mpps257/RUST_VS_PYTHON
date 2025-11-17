@@ -1,0 +1,701 @@
+[2025-11-17 14:27:40,161] ZLSpnS9Gp3hOqIL/INFO/locust.main: Starting Locust 2.42.3
+[2025-11-17 14:27:40,161] ZLSpnS9Gp3hOqIL/INFO/locust.main: Run time limit set to 10 seconds
+[2025-11-17 14:27:40,161] ZLSpnS9Gp3hOqIL/INFO/locust.runners: Ramping to 50 users at a rate of 5.00 per second
+[2025-11-17 14:27:40,161] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 5} (5 total users)
+[2025-11-17 14:27:40,161] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 0} already running)...
+[2025-11-17 14:27:40,168] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 5 users spawned
+[2025-11-17 14:27:40,168] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:40,168] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 5 still running
+[2025-11-17 14:27:40,168] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:40,170] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:40,170] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:40,170] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:40,170] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:40,190] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,191] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,198] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,198] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,219] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,221] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,222] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 53689
+[2025-11-17 14:27:40,224] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,235] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/583 HTTP/1.1" 200 111
+[2025-11-17 14:27:40,236] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 53811
+[2025-11-17 14:27:40,236] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,240] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 53811
+[2025-11-17 14:27:40,241] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,242] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,242] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,248] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,263] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54042
+[2025-11-17 14:27:40,263] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,272] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,278] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,279] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:40,279] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,279] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54382
+[2025-11-17 14:27:40,279] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,295] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54382
+[2025-11-17 14:27:40,906] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:40,912] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/584 HTTP/1.1" 200 111
+[2025-11-17 14:27:41,171] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 10} (10 total users)
+[2025-11-17 14:27:41,171] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 5} already running)...
+[2025-11-17 14:27:41,171] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 10 users spawned
+[2025-11-17 14:27:41,171] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:41,172] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 10 still running
+[2025-11-17 14:27:41,172] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:41,173] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:41,173] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:41,174] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:41,175] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:41,188] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,189] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,199] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,199] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,202] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54626
+[2025-11-17 14:27:41,204] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,209] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,209] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,217] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54748
+[2025-11-17 14:27:41,224] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54748
+[2025-11-17 14:27:41,225] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,233] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54748
+[2025-11-17 14:27:41,234] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,239] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,239] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,246] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,257] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 54979
+[2025-11-17 14:27:41,258] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,271] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,272] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,284] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55101
+[2025-11-17 14:27:41,285] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,290] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,297] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55210
+[2025-11-17 14:27:41,303] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/593 HTTP/1.1" 200 45
+[2025-11-17 14:27:41,560] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,570] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:41,623] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,636] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/586 HTTP/1.1" 200 45
+[2025-11-17 14:27:41,824] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,836] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/594 HTTP/1.1" 200 45
+[2025-11-17 14:27:41,870] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,880] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55310
+[2025-11-17 14:27:41,881] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:41,890] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,040] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,051] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55419
+[2025-11-17 14:27:42,118] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,119] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,127] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/591 HTTP/1.1" 200 111
+[2025-11-17 14:27:42,145] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,183] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 15} (15 total users)
+[2025-11-17 14:27:42,183] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 10} already running)...
+[2025-11-17 14:27:42,183] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 15 users spawned
+[2025-11-17 14:27:42,183] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:42,183] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 15 still running
+[2025-11-17 14:27:42,184] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:42,184] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:42,185] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:42,185] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:42,186] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:42,203] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,204] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,214] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55650
+[2025-11-17 14:27:42,215] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,222] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,223] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,234] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/601 HTTP/1.1" 200 111
+[2025-11-17 14:27:42,237] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55772
+[2025-11-17 14:27:42,238] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,240] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,240] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,251] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 55894
+[2025-11-17 14:27:42,253] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,265] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/602 HTTP/1.1" 200 45
+[2025-11-17 14:27:42,275] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,282] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,283] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,294] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56013
+[2025-11-17 14:27:42,295] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,299] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,305] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/604 HTTP/1.1" 200 45
+[2025-11-17 14:27:42,325] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,325] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,335] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56241
+[2025-11-17 14:27:42,337] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,342] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/593 HTTP/1.1" 200 45
+[2025-11-17 14:27:42,348] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/606 HTTP/1.1" 200 45
+[2025-11-17 14:27:42,459] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,476] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/586 HTTP/1.1" 200 45
+[2025-11-17 14:27:42,567] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,573] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/584 HTTP/1.1" 200 111
+[2025-11-17 14:27:42,745] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,751] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/591 HTTP/1.1" 200 45
+[2025-11-17 14:27:42,751] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,765] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:42,765] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,765] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56230
+[2025-11-17 14:27:42,812] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:42,814] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/590 HTTP/1.1" 200 45
+[2025-11-17 14:27:43,014] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,031] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56227
+[2025-11-17 14:27:43,062] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,063] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,070] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/604 HTTP/1.1" 200 108
+[2025-11-17 14:27:43,073] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/586 HTTP/1.1" 200 45
+[2025-11-17 14:27:43,075] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,083] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,083] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,095] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56222
+[2025-11-17 14:27:43,096] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,099] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56222
+[2025-11-17 14:27:43,198] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 20} (20 total users)
+[2025-11-17 14:27:43,198] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 15} already running)...
+[2025-11-17 14:27:43,198] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 20 users spawned
+[2025-11-17 14:27:43,198] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:43,198] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 20 still running
+[2025-11-17 14:27:43,200] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:43,200] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:43,201] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:43,201] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:43,202] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:43,214] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,216] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,216] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,220] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,223] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,225] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,240] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56575
+[2025-11-17 14:27:43,241] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,243] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56575
+[2025-11-17 14:27:43,243] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,253] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,253] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,262] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56697
+[2025-11-17 14:27:43,264] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,267] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/610 HTTP/1.1" 200 111
+[2025-11-17 14:27:43,270] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/609 HTTP/1.1" 200 111
+[2025-11-17 14:27:43,270] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,270] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,282] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 56819
+[2025-11-17 14:27:43,282] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,287] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,292] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/613 HTTP/1.1" 200 111
+[2025-11-17 14:27:43,292] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,302] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/584 HTTP/1.1" 200 45
+[2025-11-17 14:27:43,333] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,333] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,347] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57047
+[2025-11-17 14:27:43,348] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,348] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,655] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,661] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/593 HTTP/1.1" 200 108
+[2025-11-17 14:27:43,715] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,726] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/585 HTTP/1.1" 200 45
+[2025-11-17 14:27:43,727] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,727] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,752] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,752] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,762] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57148
+[2025-11-17 14:27:43,772] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/602 HTTP/1.1" 200 45
+[2025-11-17 14:27:43,772] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,783] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:43,783] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,784] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,793] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/608 HTTP/1.1" 200 103
+[2025-11-17 14:27:43,798] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57143
+[2025-11-17 14:27:43,839] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,850] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57143
+[2025-11-17 14:27:43,965] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,981] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:43,994] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57143
+[2025-11-17 14:27:44,001] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,012] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,022] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,151] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,160] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57361
+[2025-11-17 14:27:44,167] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,176] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57361
+[2025-11-17 14:27:44,215] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 25} (25 total users)
+[2025-11-17 14:27:44,215] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 20} already running)...
+[2025-11-17 14:27:44,215] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 25 users spawned
+[2025-11-17 14:27:44,215] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:44,215] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 25 still running
+[2025-11-17 14:27:44,216] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,216] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:44,217] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:44,217] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:44,218] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:44,218] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:44,226] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/607 HTTP/1.1" 200 103
+[2025-11-17 14:27:44,230] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,231] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,236] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,237] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,248] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57605
+[2025-11-17 14:27:44,249] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,257] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57605
+[2025-11-17 14:27:44,258] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,267] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,268] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,268] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,280] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57727
+[2025-11-17 14:27:44,281] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,307] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57727
+[2025-11-17 14:27:44,308] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,309] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,309] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,310] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,316] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/622 HTTP/1.1" 200 111
+[2025-11-17 14:27:44,318] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57971
+[2025-11-17 14:27:44,342] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57971
+[2025-11-17 14:27:44,343] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,344] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57971
+[2025-11-17 14:27:44,345] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,358] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/621 HTTP/1.1" 200 45
+[2025-11-17 14:27:44,359] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,364] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/617 HTTP/1.1" 200 103
+[2025-11-17 14:27:44,376] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 57968
+[2025-11-17 14:27:44,388] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,429] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,439] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/604 HTTP/1.1" 200 45
+[2025-11-17 14:27:44,440] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,450] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,451] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,459] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58072
+[2025-11-17 14:27:44,475] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,487] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58072
+[2025-11-17 14:27:44,645] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,669] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58072
+[2025-11-17 14:27:44,739] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,740] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,754] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58072
+[2025-11-17 14:27:44,755] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/610 HTTP/1.1" 200 45
+[2025-11-17 14:27:44,755] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,763] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:44,765] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,774] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58064
+[2025-11-17 14:27:44,815] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,816] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,823] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/596 HTTP/1.1" 200 111
+[2025-11-17 14:27:44,827] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58064
+[2025-11-17 14:27:44,940] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,951] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/593 HTTP/1.1" 200 45
+[2025-11-17 14:27:44,986] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:44,999] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58064
+[2025-11-17 14:27:45,095] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,121] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58064
+[2025-11-17 14:27:45,190] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,192] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,200] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/623 HTTP/1.1" 200 111
+[2025-11-17 14:27:45,204] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58064
+[2025-11-17 14:27:45,223] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 30} (30 total users)
+[2025-11-17 14:27:45,223] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 25} already running)...
+[2025-11-17 14:27:45,223] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 30 users spawned
+[2025-11-17 14:27:45,223] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:45,224] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 30 still running
+[2025-11-17 14:27:45,224] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:45,225] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:45,225] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:45,225] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:45,226] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:45,237] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,238] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,240] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,241] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,253] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,254] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,255] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,255] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,256] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,271] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58430
+[2025-11-17 14:27:45,272] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,274] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58430
+[2025-11-17 14:27:45,275] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,280] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,282] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,290] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58552
+[2025-11-17 14:27:45,305] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/629 HTTP/1.1" 200 45
+[2025-11-17 14:27:45,327] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58549
+[2025-11-17 14:27:45,328] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58549
+[2025-11-17 14:27:45,329] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,346] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,347] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,347] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,348] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,349] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,356] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/615 HTTP/1.1" 200 111
+[2025-11-17 14:27:45,380] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58671
+[2025-11-17 14:27:45,383] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58671
+[2025-11-17 14:27:45,383] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,390] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58671
+[2025-11-17 14:27:45,392] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,416] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58671
+[2025-11-17 14:27:45,421] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58671
+[2025-11-17 14:27:45,422] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,424] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58671
+[2025-11-17 14:27:45,431] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/584 HTTP/1.1" 200 45
+[2025-11-17 14:27:45,432] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,435] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58552
+[2025-11-17 14:27:45,443] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,443] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,454] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58666
+[2025-11-17 14:27:45,460] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/632 HTTP/1.1" 200 111
+[2025-11-17 14:27:45,475] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,485] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,495] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,497] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,502] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/592 HTTP/1.1" 200 111
+[2025-11-17 14:27:45,563] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,573] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58884
+[2025-11-17 14:27:45,672] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,696] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/627 HTTP/1.1" 200 45
+[2025-11-17 14:27:45,719] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,732] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:45,766] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,776] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58998
+[2025-11-17 14:27:45,922] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:45,934] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 58998
+[2025-11-17 14:27:46,040] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,053] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,109] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,124] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,127] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59107
+[2025-11-17 14:27:46,139] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,142] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,150] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/592 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,151] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,160] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,160] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,169] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59208
+[2025-11-17 14:27:46,186] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,187] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,199] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/607 HTTP/1.1" 200 103
+[2025-11-17 14:27:46,201] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59208
+[2025-11-17 14:27:46,216] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,226] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,226] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 35} (35 total users)
+[2025-11-17 14:27:46,226] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 30} already running)...
+[2025-11-17 14:27:46,226] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 35 users spawned
+[2025-11-17 14:27:46,227] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:46,227] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 35 still running
+[2025-11-17 14:27:46,227] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,227] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:46,229] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:46,229] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:46,230] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:46,230] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:46,242] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,243] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,243] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,249] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,250] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,257] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59561
+[2025-11-17 14:27:46,258] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,269] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/593 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,270] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,279] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,280] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,300] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,300] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,309] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59678
+[2025-11-17 14:27:46,310] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,319] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59678
+[2025-11-17 14:27:46,320] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,340] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/583 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,341] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,342] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,342] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,354] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59556
+[2025-11-17 14:27:46,365] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,385] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59665
+[2025-11-17 14:27:46,390] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59665
+[2025-11-17 14:27:46,391] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,395] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,400] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,401] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,409] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59787
+[2025-11-17 14:27:46,410] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,414] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/629 HTTP/1.1" 200 108
+[2025-11-17 14:27:46,433] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,433] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,434] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,444] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 59901
+[2025-11-17 14:27:46,449] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/632 HTTP/1.1" 200 111
+[2025-11-17 14:27:46,449] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,452] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,453] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,463] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60132
+[2025-11-17 14:27:46,464] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,475] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/647 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,476] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,481] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/650 HTTP/1.1" 200 111
+[2025-11-17 14:27:46,496] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,514] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/642 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,515] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,519] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/631 HTTP/1.1" 200 111
+[2025-11-17 14:27:46,524] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/621 HTTP/1.1" 200 108
+[2025-11-17 14:27:46,694] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,696] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,726] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,727] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60235
+[2025-11-17 14:27:46,728] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,737] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/628 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,737] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,745] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/634 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,805] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,818] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60354
+[2025-11-17 14:27:46,928] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,929] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,930] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,944] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60354
+[2025-11-17 14:27:46,945] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/623 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,950] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/645 HTTP/1.1" 200 45
+[2025-11-17 14:27:46,951] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,958] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:46,959] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,970] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60343
+[2025-11-17 14:27:46,990] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,991] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:46,991] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,011] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60343
+[2025-11-17 14:27:47,014] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60343
+[2025-11-17 14:27:47,017] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60343
+[2025-11-17 14:27:47,082] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,083] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,094] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60343
+[2025-11-17 14:27:47,096] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,128] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,128] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,140] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60452
+[2025-11-17 14:27:47,150] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/615 HTTP/1.1" 200 45
+[2025-11-17 14:27:47,191] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,201] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/601 HTTP/1.1" 200 45
+[2025-11-17 14:27:47,202] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,211] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,212] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,222] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,223] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60441
+[2025-11-17 14:27:47,235] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60441
+[2025-11-17 14:27:47,236] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 40} (40 total users)
+[2025-11-17 14:27:47,236] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 35} already running)...
+[2025-11-17 14:27:47,236] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 40 users spawned
+[2025-11-17 14:27:47,236] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:47,236] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 40 still running
+[2025-11-17 14:27:47,237] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:47,238] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:47,238] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:47,239] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:47,240] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:47,251] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,252] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,264] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60563
+[2025-11-17 14:27:47,266] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,266] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,267] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,267] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,283] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60685
+[2025-11-17 14:27:47,284] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,286] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60685
+[2025-11-17 14:27:47,296] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,297] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,307] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60807
+[2025-11-17 14:27:47,308] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,309] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,309] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,321] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 60929
+[2025-11-17 14:27:47,322] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,322] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,326] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/659 HTTP/1.1" 200 111
+[2025-11-17 14:27:47,333] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/657 HTTP/1.1" 200 111
+[2025-11-17 14:27:47,340] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,341] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,353] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61160
+[2025-11-17 14:27:47,355] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,356] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61160
+[2025-11-17 14:27:47,380] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61160
+[2025-11-17 14:27:47,423] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,437] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61160
+[2025-11-17 14:27:47,455] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,465] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/632 HTTP/1.1" 200 45
+[2025-11-17 14:27:47,467] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,477] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,477] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,478] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,486] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,495] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61152
+[2025-11-17 14:27:47,497] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,499] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61152
+[2025-11-17 14:27:47,506] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/647 HTTP/1.1" 200 108
+[2025-11-17 14:27:47,510] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61152
+[2025-11-17 14:27:47,613] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,622] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/617 HTTP/1.1" 200 45
+[2025-11-17 14:27:47,623] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,631] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,632] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,643] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61152
+[2025-11-17 14:27:47,674] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,686] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,686] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,687] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,694] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/644 HTTP/1.1" 200 103
+[2025-11-17 14:27:47,698] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,736] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,742] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/634 HTTP/1.1" 200 108
+[2025-11-17 14:27:47,751] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,761] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,842] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,843] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,874] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,876] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/590 HTTP/1.1" 200 108
+[2025-11-17 14:27:47,879] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/613 HTTP/1.1" 200 111
+[2025-11-17 14:27:47,888] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/640 HTTP/1.1" 200 45
+[2025-11-17 14:27:47,888] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,897] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:47,906] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,912] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/642 HTTP/1.1" 200 108
+[2025-11-17 14:27:47,982] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:47,992] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61593
+[2025-11-17 14:27:48,046] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,048] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,074] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61593
+[2025-11-17 14:27:48,077] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/603 HTTP/1.1" 200 45
+[2025-11-17 14:27:48,077] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,086] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,087] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,087] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,099] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61585
+[2025-11-17 14:27:48,101] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/629 HTTP/1.1" 200 45
+[2025-11-17 14:27:48,108] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,118] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "PUT /update/615 HTTP/1.1" 200 45
+[2025-11-17 14:27:48,124] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,125] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,138] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61585
+[2025-11-17 14:27:48,139] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,140] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61585
+[2025-11-17 14:27:48,145] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/621 HTTP/1.1" 200 108
+[2025-11-17 14:27:48,207] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,218] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61585
+[2025-11-17 14:27:48,248] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Ramping to {"CRUDUser": 45} (45 total users)
+[2025-11-17 14:27:48,248] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Spawning additional {"CRUDUser": 5} ({"CRUDUser": 40} already running)...
+[2025-11-17 14:27:48,249] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 45 users spawned
+[2025-11-17 14:27:48,249] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: All users of class CRUDUser spawned
+[2025-11-17 14:27:48,249] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 0 users have been stopped, 45 still running
+[2025-11-17 14:27:48,251] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:48,251] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:48,252] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:48,252] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:48,253] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Starting new HTTP connection (1): 127.0.0.1:5000
+[2025-11-17 14:27:48,264] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,265] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,272] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,273] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,283] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61829
+[2025-11-17 14:27:48,284] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,285] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,292] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61829
+[2025-11-17 14:27:48,293] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,300] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,300] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,309] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61951
+[2025-11-17 14:27:48,310] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,324] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61951
+[2025-11-17 14:27:48,324] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,326] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 61951
+[2025-11-17 14:27:48,333] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,333] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,342] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62073
+[2025-11-17 14:27:48,343] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,344] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/671 HTTP/1.1" 200 111
+[2025-11-17 14:27:48,368] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,371] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62182
+[2025-11-17 14:27:48,371] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,373] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,373] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,380] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/653 HTTP/1.1" 200 103
+[2025-11-17 14:27:48,381] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,394] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,412] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62413
+[2025-11-17 14:27:48,413] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,425] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62413
+[2025-11-17 14:27:48,426] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,435] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,439] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62522
+[2025-11-17 14:27:48,514] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,515] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,515] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,525] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,532] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/630 HTTP/1.1" 200 111
+[2025-11-17 14:27:48,533] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read/648 HTTP/1.1" 200 103
+[2025-11-17 14:27:48,560] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,571] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "DELETE /delete/663 HTTP/1.1" 200 45
+[2025-11-17 14:27:48,571] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,582] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,582] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,591] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62631
+[2025-11-17 14:27:48,639] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,650] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,669] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,693] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62740
+[2025-11-17 14:27:48,694] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,703] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "POST /create HTTP/1.1" 201 45
+[2025-11-17 14:27:48,763] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,772] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: http://127.0.0.1:5000 "GET /read HTTP/1.1" 200 62849
+[2025-11-17 14:27:48,827] ZLSpnS9Gp3hOqIL/INFO/locust.main: --run-time limit reached, shutting down
+[2025-11-17 14:27:48,947] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping all users (called from C:\Users\pm018586\AppData\Local\anaconda3\Lib\site-packages\locust\runners.py:551)
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-0
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-1
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-2
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-3
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-4
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-5
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-6
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-7
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-8
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-9
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-10
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-11
+[2025-11-17 14:27:48,948] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-12
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-13
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-14
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-15
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-16
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-17
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-18
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-19
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-20
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-21
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-22
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-23
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-24
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-25
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-26
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-27
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-28
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-29
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-30
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-31
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-32
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-33
+[2025-11-17 14:27:48,949] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-34
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-35
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-36
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-37
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-38
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-39
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-40
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-41
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-42
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-43
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: Stopping Greenlet-44
+[2025-11-17 14:27:48,950] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,951] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,951] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,951] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,952] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,953] ZLSpnS9Gp3hOqIL/DEBUG/urllib3.connectionpool: Resetting dropped connection: 127.0.0.1
+[2025-11-17 14:27:48,954] ZLSpnS9Gp3hOqIL/DEBUG/locust.runners: 45 users have been stopped, 0 still running
+[2025-11-17 14:27:48,955] ZLSpnS9Gp3hOqIL/DEBUG/locust.main: Running teardowns...
+[2025-11-17 14:27:48,955] ZLSpnS9Gp3hOqIL/INFO/locust.main: Shutting down (exit code 0)
+[2025-11-17 14:27:48,955] ZLSpnS9Gp3hOqIL/DEBUG/locust.main: Cleaning up runner...
