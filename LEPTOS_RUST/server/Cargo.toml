@@ -1,0 +1,19 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.6"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+parking_lot = "0.12"
+time = { version = "0.3", features = ["formatting"] }
+uuid = { version = "1", features = ["v4"] }
+csv = "1.1"
+tower-http = { version = "0.3", features = ["fs"] }
+wasm-bindgen-futures = "0.4.55"
+chrono = "0.4.42"
+rusqlite = { version = "0.29", features = ["bundled"] }
+sysinfo = { version = "0.29", features = ["default"] }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Leptos CRUD (fallback)</title>
+  <style>body{font-family:Arial;margin:20px;}table,th,td{border:1px solid #ccc;border-collapse:collapse;padding:8px;}</style>
+</head>
+<body>
+  <h2>Rust Axum CRUD App with Real-Time Metrics (Fallback UI)</h2>
+  <div>
+    <input id="name" placeholder="Name">
+    <input id="desc" placeholder="Description">
+    <button onclick="createItem()">Add</button>
+  </div>
+  <div>
+    <h3>Metrics Log</h3>
+    <table id="metricsTable"><tr><th>Operation</th><th>Timestamp</th></tr></table>
+  </div>
+  <div>
+    <h3>Database</h3>
+    <table id="databaseTable"><tr><th>ID</th><th>Name</th><th>Desc</th><th>Action</th></tr></table>
+  </div>
+
+<script>
+async function measuredFetch(url, options) {
+  const t0 = performance.now();
+  const res = await fetch(url, options);
+  const t1 = performance.now();
+  const latency = +(t1 - t0).toFixed(2);
+  return {res, latency};
+}
+
+async function createItem(){
+  const payload = {name: document.getElementById('name').value, description: document.getElementById('desc').value};
+  const {res, latency} = await measuredFetch('/api/create', {method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+  // ingest client-measured latency for this operation
+  await fetch('/api/metrics_ingest', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({operation:'CREATE', network_latency_ms: latency})});
+  loadDatabase(); loadMetrics();
+}
+
+async function loadDatabase(){
+  const res = await fetch('/api/database');
+  const data = await res.json();
+  const table = document.getElementById('databaseTable');
+  table.innerHTML = '<tr><th>ID</th><th>Name</th><th>Desc</th><th>Action</th></tr>';
+  data.items.forEach(item => {
+    const row = `
+      <tr>
+        <td>${item.id}</td>
+        <td>${item.name}</td>
+        <td><button onclick="readDesc('${item.id}')">Show Description</button></td>
+        <td>
+          <button onclick="updateItem('${item.id}')">Update</button>
+          <button onclick="deleteItem('${item.id}')">Delete</button>
+        </td>
+      </tr>
+    `;
+    table.innerHTML += row;
+  });
+}
+
+async function readDesc(id){
+  const {res, latency} = await measuredFetch('/api/read/' + id, {method:'GET'});
+  try {
+    const item = await res.json();
+    alert('Description: ' + (item.description || '(none)'));
+  } catch(e) { alert('No description or error'); }
+  await fetch('/api/metrics_ingest', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({operation:'READ', network_latency_ms: latency})});
+  loadMetrics();
+}
+
+async function updateItem(id){
+  // fetch current item to prefill
+  const r = await fetch('/api/read/' + id);
+  if (!r.ok) { alert('Failed to fetch item'); return; }
+  const item = await r.json();
+  const newName = prompt('New name', item.name);
+  const newDesc = prompt('New description', item.description || '');
+  if (newName === null) return; // cancelled
+  const payload = {name: newName, description: newDesc};
+  const {res, latency} = await measuredFetch('/api/update/' + id, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+  if (res.ok) {
+    await fetch('/api/metrics_ingest', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({operation:'UPDATE', network_latency_ms: latency})});
+    loadDatabase(); loadMetrics();
+  } else {
+    alert('Update failed');
+  }
+}
+
+async function deleteItem(id){
+  if (!confirm('Delete this item?')) return;
+  const {res, latency} = await measuredFetch('/api/delete/' + id, {method:'DELETE'});
+  if (res.ok) {
+    await fetch('/api/metrics_ingest', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({operation:'DELETE', network_latency_ms: latency})});
+    loadDatabase(); loadMetrics();
+  } else {
+    alert('Delete failed');
+  }
+}
+
+async function loadMetrics(){
+  const res = await fetch('/api/metrics');
+  const data = await res.json();
+  const table = document.getElementById('metricsTable');
+  table.innerHTML = '<tr><th>Operation</th><th>Timestamp</th></tr>';
+  data.slice(-10).reverse().forEach(m => {
+    const row = `<tr><td>${m.operation}</td><td>${m.timestamp}</td></tr>`;
+    table.innerHTML += row;
+  });
+}
+
+setInterval(()=>{loadDatabase();loadMetrics();},3000);
+loadDatabase(); loadMetrics();
+</script>
+</body>
+</html>
