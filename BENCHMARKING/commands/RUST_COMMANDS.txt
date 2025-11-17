@@ -1,0 +1,134 @@
+=== CORRECTED BENCHMARKING COMMANDS FOR RUST ===
+
+# Start Rust server and capture PID
+cd 'C:\Users\pm018586\Downloads\leptos_full_crud_metrics\server'
+$proc = Start-Process -FilePath 'cargo' -ArgumentList 'run','--release' -WorkingDirectory (Get-Location) -PassThru
+$rustPid = $proc.Id
+Write-Output "Rust PID: $rustPid"
+Start-Sleep -Seconds 3  # Give server time to start
+
+# === WARMUP CREATE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method POST --url 'http://127.0.0.1:3000/api/create' -H 'Content-Type: application/json' --data '{"name":"warm","description":"warmup"}' -c 5 -n 50 -o "C:\Users\pm018586\Downloads\benchmarks\rust\warmup_create.csv"
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 3.00 ms
+p50: 2.56 ms
+p95: 5.27 ms
+p99: 10.67 ms
+Total duration: 0.03 s
+Throughput: 1520.73 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\warmup_create.csv
+
+# === BASELINE CREATE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method POST --url 'http://127.0.0.1:3000/api/create' -H 'Content-Type: application/json' --data '{"name":"bob","description":"desc"}' -c 10 -n 200 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_create.csv' --monitor-pid $rustPid --include-client-latency
+Completed 100/200
+Completed 200/200
+
+Summary:
+Total requests: 200
+Successes: 200
+Failures: 0
+Mean: 6.25 ms
+p50: 5.95 ms
+p95: 9.83 ms
+p99: 10.89 ms
+Total duration: 0.13 s
+Throughput: 1497.24 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\10_200__create.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\10_200__create.csv.resources.csv
+
+# === WARMUP READ ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:3000/api/read' -c 5 -n 50 --monitor-pid $rustPid --include-client-latency -o "C:\Users\pm018586\Downloads\benchmarks\rust\warmup_read.csv"
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 363.45 ms
+p50: 354.65 ms
+p95: 553.86 ms
+p99: 680.53 ms
+Total duration: 3.78 s
+Throughput: 13.23 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\warmup_read.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\warmup_read.csv.resources.csv
+
+# === BASELINE READ ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:3000/api/read' -c 10 -n 200 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_read.csv' --monitor-pid $rustPid --include-client-latency
+Completed 100/200
+Completed 200/200
+
+Summary:
+Total requests: 200
+Successes: 200
+Failures: 0
+Mean: 514.68 ms
+p50: 518.06 ms
+p95: 680.44 ms
+p99: 717.35 ms
+Total duration: 10.47 s
+Throughput: 19.10 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\10_200_read.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\10_200_read.csv.resources.csv
+
+# === GET FIRST ITEM ID (for read-one, update, delete) ===
+# IMPORTANT: Store the ID in a variable and use single quotes in the URL to prevent PowerShell from interpreting special characters
+$itemsJson = Invoke-RestMethod 'http://127.0.0.1:3000/api/database'
+$firstId = $itemsJson.items[0].id
+Write-Output "Sample item id: $firstId"
+
+Sample item id: 3a2e5655-34b0-4176-a94b-bc71050644e8
+
+# === READ SINGLE BASELINE ===
+# FIX: Use single quotes around the URL to prevent backslash issues
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url "http://127.0.0.1:3000/api/read/$firstId" -c 5 -n 100 --monitor-pid $rustPid --include-client-latency -o "C:\Users\pm018586\Downloads\benchmarks\rust\rust_readone_baseline.csv"
+Completed 100/100
+
+Summary:
+Total requests: 100
+Successes: 100
+Failures: 0
+Mean: 287.47 ms
+p50: 280.34 ms
+p95: 425.78 ms
+p99: 449.09 ms
+Total duration: 5.82 s
+Throughput: 17.17 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\5_100_readone_baseline.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\5_100_readone_baseline.csv.resources.csv
+
+# === UPDATE BASELINE ===
+# FIX: Use proper JSON with single quotes around the entire data string
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method PUT --url "http://127.0.0.1:3000/api/update/$firstId" -H 'Content-Type: application/json' --data '{"name":"updated","description":"u"}' -c 5 -n 100 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_update.csv' --monitor-pid $rustPid --include-client-latency
+Completed 100/100
+
+Summary:
+Total requests: 100
+Successes: 100
+Failures: 0
+Mean: 2.90 ms
+p50: 2.95 ms
+p95: 4.68 ms
+p99: 5.50 ms
+Total duration: 0.06 s
+Throughput: 1655.54 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\5_100_update_baseline.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\5_100_update_baseline.csv.resources.csv
+
+# === DELETE BASELINE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method DELETE --url "http://127.0.0.1:3000/api/delete/$firstId" -c 5 -n 50 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_delete.csv' --monitor-pid $rustPid --include-client-latency
+
+
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 260.73 ms
+p50: 237.45 ms
+p95: 402.64 ms
+p99: 455.77 ms
+Total duration: 2.75 s
+Throughput: 18.19 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\5_50_delete_baseline.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\Benchmark 2\5_50_delete_baseline.csv.resources.csv

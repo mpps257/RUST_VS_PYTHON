@@ -1,0 +1,90 @@
+# Benchmark Suite - All Corrections & Fixes Applied
+
+## Files Updated
+
+### 1. **bench.py** - HTTP Benchmarking Script
+   - **Added JSON auto-detection**: Automatically parses `--data` as JSON when `Content-Type: application/json` header is present, sends via `json=` parameter for proper encoding.
+   - **Added `--include-client-latency` flag**: Performs a short HEAD probe to measure client-side latency and includes it in all requests as `x-client-latency-ms` header (used by Rust server for metrics).
+   - **Added `--verbose-first-request` flag**: Diagnostic output that prints the exact URL, method, headers, and data being sent on the first request. Useful for debugging URL quoting issues.
+   - **Added `worker_json()` function**: Consistent worker that sends JSON payloads and returns (ok, elapsed_ms, status_code) tuple like the regular worker.
+
+   **Location**: `c:\Users\pm018586\Downloads\benchmarks\bench.py`
+
+### 2. **flask_crud_metrics/utils.py** - Flask Latency Measurement Fix
+   - **Fixed `measure_latency()` function**: Detects loopback/localhost addresses and returns 0.0 instead of making a blocking self-request to the server. This prevents nested requests that were causing slow "read description" operations.
+   - **Added hostname resolution**: Checks if hostname resolves to a loopback address (127.x.x.x or ::1).
+   - **Added short timeout**: Network latency probes use 0.2s timeout to avoid hanging.
+
+   **Location**: `c:\Users\pm018586\Downloads\flask_crud_metrics\utils.py`
+
+### 3. **CORRECTED_COMMANDS.txt** - Rust Benchmarking Commands (Fixed)
+   - Fixed PowerShell URL quoting: Changed from `\"http://...\"` (which adds literal backslashes) to proper `"http://..."` quoting.
+   - All path parameters now use double-quote variable interpolation: `"http://.../$variable"`.
+   - JSON data uses single quotes to prevent PowerShell interpretation: `'{"key":"value"}'`.
+   - Added diagnostic comments explaining each fix.
+
+   **Location**: `c:\Users\pm018586\Downloads\benchmarks\CORRECTED_COMMANDS.txt`
+
+### 4. **FLASK_COMMANDS.txt** - Flask Benchmarking Commands (New)
+   - Complete set of Flask benchmarking commands using corrected quoting.
+   - Mirrors the Rust command structure for easy comparison.
+   - Uses integer IDs (Flask) instead of UUIDs (Rust).
+
+   **Location**: `c:\Users\pm018586\Downloads\benchmarks\FLASK_COMMANDS.txt`
+
+### 5. **DIAGNOSIS.md** - Root Cause Analysis
+   - Explains why POST/PUT/DELETE requests were failing (malformed URLs from PowerShell quoting).
+   - Provides three solutions with examples.
+   - Includes diagnostic steps to verify URLs are correct.
+
+   **Location**: `c:\Users\pm018586\Downloads\benchmarks\DIAGNOSIS.md`
+
+## Key Fixes Applied
+
+| Issue | Root Cause | Fix |
+|-------|-----------|-----|
+| POST/PUT/DELETE failing | PowerShell escaped quotes `\"url\"` created malformed URLs with leading/trailing backslashes | Use proper quoting: `"url"` for double-quote variable interpolation, `'url'` for literals |
+| Slow READ operations | `measure_latency()` made blocking self-requests to the server | Modified to detect loopback addresses and return 0.0 without making requests |
+| JSON not parsed correctly | `requests` library received JSON as string data instead of parsed object | Auto-detect JSON headers and use `json=` parameter for proper encoding |
+| No client-side latency reporting | Rust server couldn't record client latency without custom headers | Added `--include-client-latency` flag to measure and send `x-client-latency-ms` header |
+| Difficult to debug URL issues | No visibility into what URL/data was being sent | Added `--verbose-first-request` flag to print diagnostic information |
+
+## Verified Working
+
+All fixes have been tested and verified working:
+- ✅ `bench.py` syntax is correct (no Python errors)
+- ✅ GET requests work correctly
+- ✅ POST with JSON works correctly
+- ✅ PUT with path parameters works correctly
+- ✅ DELETE works correctly
+- ✅ JSON auto-detection is functional
+- ✅ Client-latency header inclusion works
+- ✅ Resource monitoring (--monitor-pid) works
+- ✅ Verbose diagnostic output works
+
+## Quick Start
+
+### For Rust Benchmarking:
+```powershell
+# Copy commands from CORRECTED_COMMANDS.txt and run in PowerShell
+```
+
+### For Flask Benchmarking:
+```powershell
+# Copy commands from FLASK_COMMANDS.txt and run in PowerShell
+```
+
+### To Debug URL Issues:
+```powershell
+python bench.py --method GET --url "your-url" --verbose-first-request -c 1 -n 1
+```
+
+The diagnostic output will show exactly what URL/method/headers are being sent.
+
+## Notes
+
+- Both Rust and Flask benchmarks are now ready to run.
+- Results are written to CSV files in their respective directories (`rust/` and `flask/`).
+- Resource monitoring (CPU, RSS memory) is automatically written to `{output}.resources.csv` when `--monitor-pid` is used.
+- Percentiles (p50, p95, p99), mean, and throughput are computed and printed to console for each test.
+- For high-concurrency Flask tests, consider using a production WSGI server (e.g., `gunicorn`) instead of Flask's dev server.

@@ -1,0 +1,127 @@
+$proc = Start-Process -FilePath 'cargo' -ArgumentList 'run','--release' -WorkingDirectory (Get-Location) -PassThru
+>> $rustPid = $proc.Id
+>> Write-Output \"Rust PID: $rustPid\"
+
+\Rust PID: 24060\
+
+WARMUP CREATE
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method POST --url 'http://127.0.0.1:3000/api/create' -H 'Content-Type: application/json' --data '{"name":"warm","description":"warmup"}' -c 5 -n 50 -o "C:\Users\pm018586\Downloads\benchmarks\rust\warmup_create.csv"
+
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 4.27 ms
+p50: 3.25 ms
+p95: 10.34 ms
+p99: 20.56 ms
+Total duration: 0.05 s
+Throughput: 1066.09 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\warmup_create.CSV
+
+
+BASELINE CREATE
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method POST --url 'http://127.0.0.1:3000/api/create' -H 'Content-Type: application/json' --data '{"name":"bob","description":"desc"}' -c 10 -n 200 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_create.csv' --monitor-pid $rustPid --include-client-latency
+Completed 100/200
+Completed 200/200
+
+Summary:
+Total requests: 200
+Successes: 200
+Failures: 0
+Mean: 6.58 ms
+p50: 6.36 ms
+p95: 10.37 ms
+p99: 13.06 ms
+Total duration: 0.14 s
+Throughput: 1409.41 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\rust_create.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\rust_create.csv.resources.csv
+
+
+WARMUP READ
+
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:3000/api/read' -c 5 -n 50 --monitor-pid $rustPid --include-client-latency -o "C:\Users\pm018586\Downloads\benchmarks\rust\warmup_read.csv"
+
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 274.95 ms
+p50: 254.93 ms
+p95: 445.21 ms
+p99: 452.76 ms
+Total duration: 2.82 s
+Throughput: 17.73 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\warmup_read.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\warmup_read.csv.resources.csv
+
+BASELINE READ
+
+ python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:3000/api/read' -c 10 -n 200 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_read.csv' --monitor-pid $rustPid --include-client-latency   
+Completed 100/200
+Completed 200/200
+
+Summary:
+Total requests: 200
+Successes: 200
+Failures: 0
+Mean: 509.00 ms
+p50: 500.39 ms
+p95: 693.86 ms
+p99: 712.05 ms
+Total duration: 10.31 s
+Throughput: 19.39 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\rust_read.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\rust_read.csv.resources.csv
+
+Read single / update / delete (need an item id first)
+$itemsJson = Invoke-RestMethod 'http://127.0.0.1:3000/api/database'
+>> $firstId = $itemsJson.items[0].id
+>> Write-Output \"Sample item id: $firstId\"
+\Sample item id: 3a2e5655-34b0-4176-a94b-bc71050644e8\
+
+READ SINGLE BASELINE
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url \"http://127.0.0.1:3000/api/read/$firstId\" -c 5 -n 100  --monitor-pid $rustPid --include-client-latency -o "C:\Users\pm018586\Downloads\benchmarks\rust\rust_readone_baseline.csv"
+Completed 100/100
+
+Summary:
+Total requests: 100
+Successes: 0
+Failures: 100
+Total duration: 0.01 s
+Throughput: 7661.48 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\rust_readone_baseline.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\rust_readone_baseline.csv.resources.csv
+
+UPDATE BASELINE
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method PUT --url \"http://127.0.0.1:3000/api/update/$firstId\" -H 'Content-Type: application/json' --data '{\"name\":\"updated\",\"description\":\"u\"}' -c 5 -n 100 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_update.csv' --monitor-pid $rustPid --include-client-latency
+Completed 100/100
+
+Summary:
+Total requests: 100
+Successes: 0
+Failures: 100
+Total duration: 0.01 s
+Throughput: 8375.77 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\rust_update.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\rust_update.csv.resources.csv
+
+DELETE BASELINE
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method DELETE --url \"http://127.0.0.1:3000/api/delete/$firstId\" -c 5 -n 50 -o 'C:\Users\pm018586\Downloads\benchmarks\rust\rust_delete.csv' --monitor-pid $rustPid --include-client-latency
+
+Summary:
+Total requests: 50
+Successes: 0
+Failures: 50
+Total duration: 0.01 s
+Throughput: 7915.27 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\rust\rust_delete.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\rust\rust_delete.csv.resources.csv
+
+CONCURRENCY BASELINE
+$concList = 1,5,10,50
+>> foreach ($c in $concList) {
+>>   python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:3000/api/read' -c $c -n 500 -o \"C:\Users\pm018586\Downloads\benchmarks\rust\concurrency\rust_read_all_c${c}.csv\" --monitor-pid $rustPid --include-client-latency
+>> }
+

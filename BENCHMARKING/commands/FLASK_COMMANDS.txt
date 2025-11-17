@@ -1,0 +1,136 @@
+=== CORRECTED BENCHMARKING COMMANDS FOR FLASK ===
+
+# Start Flask server and capture PID
+cd 'C:\Users\pm018586\Downloads\flask_crud_metrics'
+# Activate venv (if not already activated)
+.\.venv\Scripts\Activate.ps1
+$proc = Start-Process -FilePath '.\.venv\Scripts\python.exe' -ArgumentList 'app.py' -WorkingDirectory (Get-Location) -PassThru
+$flaskPid = $proc.Id
+Write-Output "Flask PID: $flaskPid"
+Start-Sleep -Seconds 2  # Give server time to start
+
+Flask PID: 29240
+
+# === WARMUP CREATE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method POST --url 'http://127.0.0.1:5000/create' -H 'Content-Type: application/json' --data '{"name":"warm","description":"warmup"}' -c 5 -n 50 -o "C:\Users\pm018586\Downloads\benchmarks\flask\warmup_create.csv"
+
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 6.50 ms
+p50: 4.71 ms
+p95: 16.97 ms
+p99: 20.31 ms
+Total duration: 0.08 s
+Throughput: 615.36 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\warmup_create.csv
+
+# === BASELINE CREATE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method POST --url 'http://127.0.0.1:5000/create' -H 'Content-Type: application/json' --data '{"name":"alice","description":"desc"}' -c 10 -n 200 -o 'C:\Users\pm018586\Downloads\benchmarks\flask\flask_create.csv' --monitor-pid $flaskPid --include-client-latency
+Completed 100/200
+Completed 200/200
+
+Summary:
+Total requests: 200
+Successes: 200
+Failures: 0
+Mean: 13.08 ms
+p50: 12.64 ms
+p95: 18.79 ms
+p99: 25.76 ms
+Total duration: 0.27 s
+Throughput: 733.53 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\10_200_baseline_create.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\python\10_200_baseline_create.csv.resources.csv
+
+# === WARMUP READ (list all items) ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:5000/read' -c 5 -n 50 --monitor-pid $flaskPid --include-client-latency -o "C:\Users\pm018586\Downloads\benchmarks\flask\warmup_read.csv"
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 12.95 ms
+p50: 10.40 ms
+p95: 25.81 ms
+p99: 29.12 ms
+Total duration: 0.14 s
+Throughput: 355.92 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\warmup_read.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\python\warmup_read.csv.resources.csv
+
+# === BASELINE READ (list all items) ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url 'http://127.0.0.1:5000/read' -c 10 -n 200 -o 'C:\Users\pm018586\Downloads\benchmarks\flask\flask_read.csv' --monitor-pid $flaskPid --include-client-latency
+
+Completed 100/200
+Completed 200/200
+
+Summary:
+Total requests: 200
+Successes: 200
+Failures: 0
+Mean: 25.59 ms
+p50: 25.12 ms
+p95: 42.85 ms
+p99: 51.44 ms
+Total duration: 0.53 s
+Throughput: 380.06 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\10_200_baseline_read.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\python\10_200_baseline_read.csv.resources.csv
+
+# === GET FIRST ITEM ID (for read-one, update, delete) ===
+# Flask uses integer IDs (unlike Rust which uses UUIDs)
+$itemsJson = Invoke-RestMethod 'http://127.0.0.1:5000/database'
+$firstId = $itemsJson.items[0].id
+Write-Output "Sample flask item id: $firstId"
+
+Sample flask item id: 1
+
+# === READ SINGLE BASELINE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method GET --url "http://127.0.0.1:5000/read/$firstId" -c 5 -n 100 --monitor-pid $flaskPid --include-client-latency -o "C:\Users\pm018586\Downloads\benchmarks\flask\flask_read_one.csv"
+Completed 100/100
+
+Summary:
+Total requests: 100
+Successes: 100
+Failures: 0
+Mean: 15.62 ms
+p50: 14.19 ms
+p95: 30.04 ms
+p99: 33.57 ms
+Total duration: 0.32 s
+Throughput: 312.51 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\5_100_baseline_readsingle.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\python\5_100_baseline_readsingle.csv.resources.csv
+
+# === UPDATE BASELINE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method PUT --url "http://127.0.0.1:5000/update/$firstId" -H 'Content-Type: application/json' --data '{"name":"updated","description":"u"}' -c 5 -n 100 -o 'C:\Users\pm018586\Downloads\benchmarks\flask\flask_update.csv' --monitor-pid $flaskPid --include-client-latency
+Completed 100/100
+
+Summary:
+Total requests: 100
+Successes: 100
+Failures: 0
+Mean: 8.23 ms
+p50: 5.52 ms
+p95: 25.84 ms
+p99: 29.40 ms
+Total duration: 0.17 s
+Throughput: 587.39 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\5_100_baseline_update.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\python\5_100_baseline_update.csv.resources.csv
+
+# === DELETE BASELINE ===
+python 'C:\Users\pm018586\Downloads\benchmarks\bench.py' --method DELETE --url "http://127.0.0.1:5000/delete/$firstId" -c 5 -n 50 -o 'C:\Users\pm018586\Downloads\benchmarks\flask\flask_delete.csv' --monitor-pid $flaskPid --include-client-latency
+Summary:
+Total requests: 50
+Successes: 50
+Failures: 0
+Mean: 10.50 ms
+p50: 6.49 ms
+p95: 26.85 ms
+p99: 34.62 ms
+Total duration: 0.11 s
+Throughput: 453.70 req/s
+Wrote per-request CSV to C:\Users\pm018586\Downloads\benchmarks\python\5_50_baseline_delete.csv
+Wrote resource samples to C:\Users\pm018586\Downloads\benchmarks\python\5_50_baseline_delete.csv.resources.csv
