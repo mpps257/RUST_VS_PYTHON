@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flask CRUD with Metrics</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    .metrics, .crud { margin-top: 20px; }
+    table, th, td { border: 1px solid #ccc; border-collapse: collapse; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h2>Flask CRUD App with Real-Time Metrics</h2>
+  <div class="crud">
+    <h3>Add Item</h3>
+    <input id="name" placeholder="Name">
+    <input id="desc" placeholder="Description">
+    <button onclick="createItem()">Add</button>
+  </div>
+
+  <div class="crud">
+    <h3>Edit Item</h3>
+    <input id="editId" placeholder="Item ID" type="number">
+    <input id="editName" placeholder="New Name">
+    <input id="editDesc" placeholder="New Description">
+    <button onclick="updateItem()">Update</button>
+  </div>
+
+  <div class="metrics">
+    <h3>Metrics Log</h3>
+    <table id="metricsTable">
+      <tr><th>Operation</th><th>Execution Time (ms)</th><th>Memory (MB)</th><th>Network Latency (ms)</th></tr>
+    </table>
+  </div>
+
+  <div class="database">
+    <h3>Database Information</h3>
+    <p>Total Items: <span id="totalItems">0</span></p>
+    <p>Database URI: <span id="dbUri"></span></p>
+    <table id="databaseTable">
+      <tr><th>ID</th><th>Name</th><th>Description</th><th>Action</th></tr>
+    </table>
+  </div>
+
+<script>
+async function createItem() {
+  await fetch('/create', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: document.getElementById('name').value, description: document.getElementById('desc').value })
+  });
+  // Refresh both the metrics and the database view so the UI shows the new item immediately
+  document.getElementById('name').value = '';
+  document.getElementById('desc').value = '';
+  loadDatabase();
+  loadMetrics();
+}
+
+async function loadMetrics() {
+  const res = await fetch('/metrics');
+  const data = await res.json();
+  const table = document.getElementById('metricsTable');
+  table.innerHTML = '<tr><th>Operation</th><th>Execution Time (ms)</th><th>Memory (MB)</th><th>Network Latency (ms)</th></tr>';
+  data.slice(-10).reverse().forEach(m => {
+    const row = `<tr><td>${m.operation}</td><td>${m.execution_time_ms}</td><td>${m.memory_mb}</td><td>${m.network_latency_ms}</td></tr>`;
+    table.innerHTML += row;
+  });
+}
+
+async function loadDatabase() {
+  const res = await fetch('/database');
+  const data = await res.json();
+  document.getElementById('totalItems').textContent = data.total_items;
+  document.getElementById('dbUri').textContent = data.database_uri;
+  const table = document.getElementById('databaseTable');
+  table.innerHTML = '<tr><th>ID</th><th>Name</th><th>Description</th><th>Action</th></tr>';
+
+  data.items.forEach(item => {
+    const row = `
+      <tr id="row-${item.id}">
+        <td>${item.id}</td>
+        <td>${item.name}</td>
+        <td>
+          <button onclick="toggleDescription(${item.id}, '${item.description.replace(/'/g, "\\'")}')">
+            Show Description
+          </button>
+        </td>
+        <td>
+          <button onclick="editItem(${item.id}, '${item.name}', '${item.description.replace(/'/g, "\\'")}')">Edit</button>
+          <button onclick="deleteItem(${item.id})">Delete</button>
+        </td>
+      </tr>
+      <tr id="desc-${item.id}" style="display: none;">
+        <td colspan="4"><strong>Description:</strong> ${item.description || '(no description)'}</td>
+      </tr>
+    `;
+    table.innerHTML += row;
+  });
+}
+
+
+function editItem(id, name, desc) {
+  document.getElementById('editId').value = id;
+  document.getElementById('editName').value = name;
+  document.getElementById('editDesc').value = desc;
+}
+
+async function deleteItem(id) {
+  await fetch(`/delete/${id}`, { method: 'DELETE' });
+  loadDatabase();
+  loadMetrics();
+}
+
+async function toggleDescription(id, desc) {
+  const descRow = document.getElementById(`desc-${id}`);
+  const button = document.querySelector(`#row-${id} button`);
+  
+  if (descRow.style.display === 'none') {
+    // Record a READ metric on the server
+    await fetch(`/read/${id}`);
+    descRow.style.display = 'table-row';
+    button.textContent = 'Hide Description';
+    loadMetrics(); // refresh metrics table
+  } else {
+    descRow.style.display = 'none';
+    button.textContent = 'Show Description';
+  }
+}
+
+
+
+async function updateItem() {
+  const id = document.getElementById('editId').value;
+  const name = document.getElementById('editName').value;
+  const desc = document.getElementById('editDesc').value;
+  
+  if (!id || !name) {
+    alert('Please enter Item ID and Name');
+    return;
+  }
+  
+  await fetch(`/update/${id}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: name, description: desc })
+  });
+  
+  document.getElementById('editId').value = '';
+  document.getElementById('editName').value = '';
+  document.getElementById('editDesc').value = '';
+  loadDatabase();
+  loadMetrics();
+}
+
+setInterval(loadMetrics, 3000);
+setInterval(loadDatabase, 3000);
+loadMetrics();
+loadDatabase();
+</script>
+</body>
+</html>
