@@ -1,0 +1,80 @@
+Starting preprocessing pipeline...
+=============Initial Process info================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 29.02 MB
+Till -- Initial Process info : 453.6389ms
+DataFrame shape: (116352, 32)
+=============After Loading CSV================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 78.75 MB
+Till -- After Loading CSV : 805.7894ms
+=============Type Casting 'BENE_DEATH_DT'================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 82.52 MB
+Till -- Type Casting 'BENE_DEATH_DT' : 837.4485ms
+=============Getting column Types================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 82.51 MB
+Till -- Getting column Types : 855.6742ms
+Numerical column: BENE_DEATH_DT
+No categorical column found
+=============Detect most number of missing values================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 82.54 MB
+Till -- Detect most number of missing values : 874.0896ms
+=============Imputation================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 83.45 MB
+Till -- Imputation : 894.8863ms
+Normalizing 'MEDREIMB_CAR' with minmax: min=0.0000, max=21160.0000
+=============Normalise================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 84.45 MB
+Till -- Normalise : 920.5019ms
+=============Add Column================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 85.42 MB
+Till -- Add Column : 945.4675ms
+=============Filter================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 76.95 MB
+Till -- Filter : 986.1645ms
+=============Sort - Ascending================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 102.49 MB
+Till -- Sort - Ascending : 1.034264s
+=============Sort - Descending================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 102.51 MB
+Till -- Sort - Descending : 1.0527323s
+=============Creating Vars================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 102.53 MB
+Till -- Creating Vars : 1.0715638s
+=============Column Selection================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 102.51 MB
+Till -- Column Selection : 1.0898274s
+=============Column Drop================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 102.54 MB
+Till -- Column Drop : 1.1073183s
+=============Sampling================
+Process name: pre_proc.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Preprocessing\\main\\rust\\pre_proc\\target\\debug\\pre_proc.exe")
+Memory usage: 103.47 MB
+Till -- Sampling : 1.1532412s

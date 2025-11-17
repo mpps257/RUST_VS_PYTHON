@@ -1,0 +1,55 @@
+First : 1000 , Last : 10000 , Middle : 5498 , Element < MIN : 50 , Element > MAX 100006
+Linear Search First Element : 0
+Linear Search Last Element : 999906
+Linear Search Middle Element : 500000
+Linear Search Element < 1000  : -1
+Linear Search Element > 10000  : -1
+Wrote profile results to 'lin_search.py.lprof'
+Timer unit: 1e-06 s
+
+Total time: 5.82256 s
+File: .\lin_search.py
+Function: generate_sorted_random_array at line 6
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     6                                           @profile
+     7                                           def generate_sorted_random_array(n: int) -> list[int]:
+     8         1    5680085.5 5.68e+06     97.6      arr = [random.randint(MIN, MAX) for _ in range(n)]
+     9         1     142468.1 142468.1      2.4      arr.sort()
+    10         1          4.2      4.2      0.0      return arr
+
+Total time: 2.47552 s
+File: .\lin_search.py
+Function: linear_search at line 12
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    12                                           @profile
+    13                                           def linear_search(arr, target):
+    14   3499911    1448060.0      0.4     58.5      for i, val in enumerate(arr):
+    15   3499909    1027439.4      0.3     41.5          if val == target:
+    16         3         11.4      3.8      0.0              return i
+    17         2          6.9      3.5      0.0      return -1
+
+Total time: 9.15405 s
+File: .\lin_search.py
+Function: main at line 19
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+    19                                           @profile
+    20                                           def main():
+    21         1    5822590.1 5.82e+06     63.6      array = generate_sorted_random_array(ARRAY_SIZE)
+    22         1          1.3      1.3      0.0      first = array[0]
+    23         1          0.6      0.6      0.0      last = array[-1]
+    24         1          1.8      1.8      0.0      middle = array[ARRAY_SIZE//2]
+    25         1          0.5      0.5      0.0      el_les = 50
+    26         1          3.0      3.0      0.0      el_grt = 100006
+    27         1        170.1    170.1      0.0      print(f"First : {first} , Last : {last} , Middle : {middle} , Element < MIN : {50} , Element > MAX {100006}") 
+    28
+    29         1        193.4    193.4      0.0      print(f"Linear Search First Element : {linear_search(array,first)}")
+    30         1     964916.3 964916.3     10.5      print(f"Linear Search Last Element : {linear_search(array,last)}")
+    31         1     482169.9 482169.9      5.3      print(f"Linear Search Middle Element : {linear_search(array,middle)}")
+    32         1     937482.4 937482.4     10.2      print(f"Linear Search Element < {MIN}  : {linear_search(array,el_les)}")
+    33         1     946516.7 946516.7     10.3      print(f"Linear Search Element > {MAX}  : {linear_search(array,el_grt)}")

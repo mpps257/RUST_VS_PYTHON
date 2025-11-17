@@ -1,0 +1,13 @@
+Benchmark 1: jump_search\target\debug\jump_search.exe                                                                                                                                                                                                                 
+  Time (mean ± σ):      1.020 s ±  0.013 s    [User: 0.856 s, System: 0.432 s]                                                                                                                                                                                        
+  Range (min … max):    0.999 s …  1.056 s    20 runs
+
+Benchmark 2: python jump_search\jump_search.py
+  Time (mean ± σ):     322.7 ms ±   8.3 ms    [User: 12.9 ms, System: 20.2 ms]
+  Range (min … max):   312.5 ms … 350.6 ms    20 runs
+
+  Warning: Ignoring non-zero exit code.
+
+Summary
+  python jump_search\jump_search.py ran
+    3.16 ± 0.09 times faster than jump_search\target\debug\jump_search.exe

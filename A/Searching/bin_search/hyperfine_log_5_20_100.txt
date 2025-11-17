@@ -1,0 +1,11 @@
+Benchmark 1: bin_search.py
+  Time (mean ± σ):     255.0 ms ±  12.4 ms    [User: 68.0 ms, System: 86.2 ms]                                                                                     
+  Range (min … max):   238.8 ms … 275.3 ms    20 runs
+ 
+Benchmark 2: target\debug\bin_search.exe
+  Time (mean ± σ):      1.124 s ±  0.034 s    [User: 0.855 s, System: 0.415 s]                                                                                     
+  Range (min … max):    1.067 s …  1.197 s    20 runs
+ 
+Summary
+  bin_search.py ran
+    4.41 ± 0.25 times faster than target\debug\bin_search.exe

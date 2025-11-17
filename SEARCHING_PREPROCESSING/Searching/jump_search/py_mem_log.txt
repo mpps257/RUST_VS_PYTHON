@@ -1,0 +1,56 @@
+First : 1000 , Last : 10000 , Middle : 5493 , Element < MIN : 50 , Element > MAX 100006
+Jump Search First Element : 0
+Jump Search Last Element : 999909
+Jump Search Middle Element : 499922
+Jump Search Element < 1000  : -1
+Jump Search Element > 10000  : -1
+Filename: .\jump_search.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+     7   44.223 MiB   44.223 MiB           1   @profile
+     8                                         def generate_sorted_random_array(n: int) -> list[int]:
+     9   81.531 MiB -194448.949 MiB     1000001       arr = [random.randint(MIN, MAX) for _ in range(n)]
+    10   82.164 MiB    0.633 MiB           1       arr.sort()
+    11   82.164 MiB    0.000 MiB           1       return arr
+
+
+Filename: .\jump_search.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    13   82.164 MiB  410.820 MiB           5   @profile
+    14                                         def jump_search(arr, target):
+    15   82.164 MiB    0.000 MiB           5       n = len(arr)
+    16   82.164 MiB    0.000 MiB           5       step = int(math.sqrt(n))
+    17   82.164 MiB    0.000 MiB           5       prev = 0
+    18   82.164 MiB    0.000 MiB        2502       while arr[min(step, n) - 1] < target:
+    19   82.164 MiB    0.000 MiB        2498           prev = step
+    20   82.164 MiB    0.000 MiB        2498           step += int(math.sqrt(n))
+    21   82.164 MiB    0.000 MiB        2498           if prev >= n:
+    22   82.164 MiB    0.000 MiB           1               return -1
+    23   82.164 MiB    0.000 MiB        2835       for i in range(prev, min(step, n)):
+    24   82.164 MiB    0.000 MiB        2834           if arr[i] == target:
+    25   82.164 MiB    0.000 MiB           3               return i
+    26   82.164 MiB    0.000 MiB           1       return -1
+
+
+Filename: .\jump_search.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    28   44.211 MiB   44.211 MiB           1   @profile
+    29                                         def main():
+    30   82.164 MiB   82.164 MiB           1       array = generate_sorted_random_array(ARRAY_SIZE)
+    31   82.164 MiB    0.000 MiB           1       first = array[0]
+    32   82.164 MiB    0.000 MiB           1       last = array[-1]
+    33   82.164 MiB    0.000 MiB           1       middle = array[ARRAY_SIZE//2]
+    34   82.164 MiB    0.000 MiB           1       el_les = 50
+    35   82.164 MiB    0.000 MiB           1       el_grt = 100006
+    36   82.164 MiB    0.000 MiB           1       print(f"First : {first} , Last : {last} , Middle : {middle} , Element < MIN : {50} , Element > MAX {100006}")   
+    37
+    38   82.164 MiB   82.164 MiB           1       print(f"Jump Search First Element : {jump_search(array,first)}")
+    39   82.164 MiB   82.164 MiB           1       print(f"Jump Search Last Element : {jump_search(array,last)}")
+    40   82.164 MiB   82.164 MiB           1       print(f"Jump Search Middle Element : {jump_search(array,middle)}")
+    41   82.164 MiB   82.164 MiB           1       print(f"Jump Search Element < {MIN}  : {jump_search(array,el_les)}")
+    42   82.164 MiB   82.164 MiB           1       print(f"Jump Search Element > {MAX}  : {jump_search(array,el_grt)}")

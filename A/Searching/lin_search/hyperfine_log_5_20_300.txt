@@ -1,0 +1,13 @@
+Benchmark 1: lin_search\target\debug\lin_search.exe                                                                                                                                                                                                                   
+  Time (mean ± σ):      1.056 s ±  0.025 s    [User: 0.906 s, System: 0.444 s]                                                                                                                                                                                        
+  Range (min … max):    1.017 s …  1.124 s    20 runs
+
+Benchmark 2: python lin_search\lin_search.py
+  Time (mean ± σ):     324.5 ms ±   9.8 ms    [User: 8.1 ms, System: 24.6 ms]                                                                                                                                                                                         
+  Range (min … max):   312.5 ms … 339.6 ms    20 runs
+
+  Warning: Ignoring non-zero exit code.
+
+Summary
+  python lin_search\lin_search.py ran
+    3.26 ± 0.12 times faster than lin_search\target\debug\lin_search.exe

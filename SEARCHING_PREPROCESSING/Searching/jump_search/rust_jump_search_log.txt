@@ -1,0 +1,43 @@
+=============Before Jump Search================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 26.77 MB
+Till -- Before Jump Search : 418.0305ms
+=============Array Generation & Sort================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 30.81 MB
+Till -- Array Generation & Sort : 1.0908782s
+First : 1000 , Last : 9999 , Middle : 5496 , Element < MIN : 50 , Element > MAX 10006
+Jump Search First Element : None
+=============First Element Search================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 30.07 MB
+Till -- First Element Search : 1.1050988s
+Jump Search Last Element : Some(999894)
+=============Last Element Search================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 30.09 MB
+Till -- Last Element Search : 1.1186942s
+Jump Search Middle Element : Some(499960)
+=============Middle Element Search================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 30.07 MB
+Till -- Middle Element Search : 1.131535s
+=================================
+Jump Search Element < 1000 : None
+=============Element < MIN Search================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 30.11 MB
+Till -- Element < MIN Search : 1.1449656s
+=================================
+Jump Search Element > 10000 : None
+=============Element > MAX Search================
+Process name: jump_search.exe
+Executable path: Some("C:\\Users\\pm018586\\OneDrive - Zelis Healthcare\\Documents\\Learning\\py_vs_rust\\Searching\\jump_search\\target\\debug\\jump_search.exe")
+Memory usage: 30.10 MB
+Till -- Element > MAX Search : 1.1575035s
