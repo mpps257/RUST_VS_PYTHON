@@ -53,7 +53,7 @@ The time profiling analysis reveals significant performance differences between 
 - Performance gap widens with increasing data complexity
 
 ### 3.2 Performance Analysis
-![Initial Execution Time](images/Execution%20Time%20Comparison%20Rust%20VS%20Python.png)
+![Initial Execution Time Comparison](images/Execution%20Time%20Comparison%20Rust%20VS%20Python.png)
 **Rust Advantages:**
 - Initial Observations were that Rust underperforms due to cache misses 
 - Hence with a warmup we compared performances of Rust and Python
@@ -77,8 +77,8 @@ Following we can see how the whole pipeline execution was much faster in Rust wh
 ### 4.1 Memory Consumption Patterns
 
 Memory profiling reveals distinct characteristics in how each language handles preprocessing data:
-![Warmup And Speedup](images/Memory%20Profiling%20%20Rust%20VS%20Python.png).
-![Warmup And Speedup](images/Mem%20Inc%20Comparison.png)
+![Stepwise memory increment](images/Memory%20Profiling%20%20Rust%20VS%20Python.png).
+![Stepwise memory difference](images/Mem%20Inc%20Comparison.png)
 
 
 **Rust Memory Profile:**

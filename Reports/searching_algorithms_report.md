@@ -79,7 +79,7 @@ Time profiling done on warmup and performed and averaged accross multiple runs.
 ## 4. Memory Profiling
 
 ### 4.1 Memory Consumption Analysis
-![Rust Vs Python](images/Memory%20Profiling.png)
+![Memory Rust Vs Python](images/Memory%20Profiling.png)
 
 **Rust Memory Profile:**
 - Stack-allocated search indices and temporary variables
@@ -107,7 +107,7 @@ As dataset size increases:
 ## 5. Scalability Analysis
 
 ### 5.1 Algorithmic Complexity
-![Rust Vs Python](images/Scalability.png)
+![Scalability Increment Array Size](images/Scalability.png)
 This scalability test was done for **Linear Search** since it was worst performing algorithm in terms of time complexity.
 
 | Algorithm      | Time Complexity | Space Complexity | Best Use Case              |

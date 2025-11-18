@@ -51,7 +51,7 @@ The time profiling analysis reveals significant performance differences between 
 - Python shows higher execution overhead due to interpreted nature and also since Flask is sequential adds additional overhead
 
 ### 3.2 Performance Analysis
-![Initial Execution Time](images/mean%20latency%20comparison.png)
+![Mean Latency Comparison](images/mean%20latency%20comparison.png)
 
 - Each of the requests were made for certain number of time 
 - Collected latencies are averaged and plotted for comparison
@@ -60,7 +60,7 @@ The time profiling analysis reveals significant performance differences between 
 
 **P95** **(95th percentile)** **latency**: 95% of all requests completed faster than this value, and 5% were slower.It captures how your API behaves under real-world load, especially for the slower requests. 
 
-![Initial Execution Time](images/p95%20latency%20comparison.png)
+![Tail Latency Comparison](images/p95%20latency%20comparison.png)
 - Reveals that reads and deletes are little unstable in case of Rust 
 - Nevertheless Rust outperforms Python in tail latency comparison.
 
@@ -68,7 +68,7 @@ The time profiling analysis reveals significant performance differences between 
 - Reveals the number of tasks or requests that can be processed in a unit time. So lower the execution time better the processing speed. Hence Rust does well in this case too in line with what we have observed in cases of mean latency and tail latency comparison.
 - Since we mentioned already about unstability in processing the Reads and Deletes we can observe a little lower throughput. 
 
-![Initial Memory Consumptions](images/Throughput%20comparison.png)
+![Throughput Comparison](images/Throughput%20comparison.png)
 
 
 ## 4. Memory Profiling
@@ -76,7 +76,7 @@ The time profiling analysis reveals significant performance differences between 
 ### 4.1 Memory Consumption Patterns
 
 Memory profiling reveals distinct characteristics in how each handles requests and amount of space occupied and also amount of variability on bulk requests for memory intensive tasks:
-![Initial Memory Consumptions](images/Memory%20Endpoint.png)
+![Memory Endpoint comparison](images/Memory%20Endpoint.png)
 
 **Rust Memory Profile:**
 - Predictable memory allocation patterns
