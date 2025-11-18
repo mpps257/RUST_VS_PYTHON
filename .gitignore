@@ -1,0 +1,9 @@
+*.xlsx
+*.csv
+*.log
+*.pptx
+*.xlsx
+*.png
+*.jpeg
+*\target\
+*.exe
