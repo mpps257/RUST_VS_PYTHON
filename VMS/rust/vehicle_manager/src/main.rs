@@ -3,9 +3,11 @@ use vehicle_manager::handlers::{get_vehicle, post_vehicle};
 
 #[tokio::main]
 async fn main() {
+    //Connection to database can be initialized here if needed
+    let _conn = vehicle_manager::db::init_db("vehicle_manager.db").expect("Failed to initialize database");
+
 
     //1 Create axum router
-
     let router_1 = Router::new() //If we have same routes then we can chain them here
     .route("/", get(|| async { "Hello, World!" }))
     .route("/vehicle/get_vehicle",get(get_vehicle))

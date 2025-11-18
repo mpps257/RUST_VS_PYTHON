@@ -1,6 +1,9 @@
 import os
 import uuid
 from locust import HttpUser, task, between
+import time
+import csv
+from datetime import datetime
 
 
 def get_impl():
@@ -21,6 +24,7 @@ class CRUDUser(HttpUser):
                 'read_one': '/api/read/{}',
                 'update': '/api/update/{}',
                 'delete': '/api/delete/{}',
+                'bulk_create': '/api/bulk_create',
             }
         else:
             # default to flask
@@ -30,6 +34,7 @@ class CRUDUser(HttpUser):
                 'read_one': '/read/{}',
                 'update': '/update/{}',
                 'delete': '/delete/{}',
+                'bulk_create': '/bulk_create',
             }
 
         # create a unique item for this user and remember its id
@@ -88,3 +93,39 @@ class CRUDUser(HttpUser):
                         break
             except Exception:
                 pass
+
+
+    @task(1)
+    def bulk_create_benchmark(self):
+        
+
+        # Test for these record counts
+        record_counts = [100, 1000, 10000, 100000, 1000000]
+        for count in record_counts:
+            # Prepare payload
+            payload = [
+                {"name": f"bulk-{uuid.uuid4()}", "description": "bulk load"}
+                for _ in range(count)
+            ]
+            start = time.time()
+            with self.client.post(self.paths['bulk_create'], json=payload, catch_response=True) as resp:
+                elapsed = (time.time() - start) * 1000  # ms
+                # Log to CSV (append)
+                log_row = {
+                    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "operation": f"BULK_CREATE_{self.impl.upper()}_{count}",
+                    "execution_time_ms": round(elapsed, 2),
+                    "memory_mb": '',  # Not measured here
+                    "network_latency_ms": ''  # Not measured here
+                }
+                # Write to CSV file (per impl)
+                csv_file = f"bulk_create_{self.impl}.csv"
+                file_exists = os.path.isfile(csv_file)
+                with open(csv_file, mode='a', newline='') as f:
+                    writer = csv.DictWriter(
+                        f,
+                        fieldnames=["timestamp", "operation", "execution_time_ms", "memory_mb", "network_latency_ms"]
+                    )
+                    if not file_exists:
+                        writer.writeheader()
+                    writer.writerow(log_row)

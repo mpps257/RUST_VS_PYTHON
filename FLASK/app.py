@@ -153,6 +153,38 @@ def read_item(item_id):
         "description": item.description
     })
 
+# Bulk creation endpoint
+@app.route('/bulk_create', methods=['POST'])
+def bulk_create_items():
+    data = request.json
+    if not isinstance(data, list):
+        return jsonify({"error": "Request body must be a list of items."}), 400
+
+    items = [Item(name=item['name'], description=item.get('description', '')) for item in data]
+
+    def add_all():
+        db.session.add_all(items)
+        db.session.commit()
+
+    _, exec_time, mem_used = measure_execution_metrics(add_all)
+
+    metric = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "operation": f"BULK_CREATE ({len(items)})",
+        "execution_time_ms": exec_time,
+        "memory_mb": mem_used,
+        "network_latency_ms": measure_latency(request.url)
+    }
+    append_metric_to_csv(metric)
+    metrics_log.append(metric)
+
+    return jsonify({
+        "message": f"{len(items)} items created successfully",
+        "created_count": len(items)
+    }), 201
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
