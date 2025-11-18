@@ -83,6 +83,8 @@ class EndpointTester:
         latencies = []
         successes = 0
         failures = 0
+
+        start_time = time.time()
         
         for i in range(iterations):
             # Add client latency header for server-side correlation
@@ -104,6 +106,10 @@ class EndpointTester:
             # Delay between requests
             if delay_ms > 0 and i < iterations - 1:
                 time.sleep(delay_ms / 1000.0)
+
+        end_time = time.time()
+        total_duration = end_time - start_time
+        throughput = iterations / total_duration if total_duration > 0 else 0
         
         # Calculate statistics
         stats = {
@@ -112,6 +118,8 @@ class EndpointTester:
             'successful': successes,
             'failed': failures,
             'success_rate': (successes / iterations) * 100 if iterations > 0 else 0,
+            'total_duration_sec': total_duration,
+            'throughput_rps': throughput,
         }
         
         if latencies:
@@ -147,6 +155,8 @@ class EndpointTester:
         print(f"  Total Requests:  {stats['total_requests']}")
         print(f"  Successful:      {stats['successful']} ({stats['success_rate']:.2f}%)")
         print(f"  Failed:          {stats['failed']}")
+        print(f"  Total Duration:  {stats['total_duration_sec']:.2f} s")
+        print(f"  Throughput:      {stats['throughput_rps']:.2f} req/s")
         
         if 'mean_latency_ms' in stats:
             print(f"\n  Latency Statistics (ms):")
