@@ -142,11 +142,13 @@ async fn read_all(metrics: Metrics, headers: HeaderMap) -> Result<Json<Vec<Item>
 																									description: row.get(2).ok(),
 																								})
 																							}).map_err(|_| (StatusCode::INTERNAL_SERVER_ERROR, "DB error"))?;
+
+	let exec = start.elapsed().as_secs_f64() * 1000.0;
 	let mut items_vec = Vec::new();
 	for it in items_iter {
 		if let Ok(i) = it { items_vec.push(i); }
 	}
-	let exec = start.elapsed().as_secs_f64() * 1000.0;
+	
 	let client_latency = headers.get("x-client-latency-ms")
 									 .and_then(|v| v.to_str().ok())
 									 .and_then(|s| s.parse::<f64>().ok())

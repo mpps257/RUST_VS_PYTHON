@@ -1,0 +1,31 @@
+============================================================
+Testing: GET /read
+Iterations: 100
+============================================================
+
+  Progress: 10/100 requests completed
+  Progress: 20/100 requests completed
+  Progress: 30/100 requests completed
+  Progress: 40/100 requests completed
+  Progress: 50/100 requests completed
+  Progress: 60/100 requests completed
+  Progress: 70/100 requests completed
+  Progress: 80/100 requests completed
+  Progress: 90/100 requests completed
+  Progress: 100/100 requests completed
+
+📊 Results for GET /read:
+  Total Requests:  100
+  Successful:      100 (100.00%)
+  Failed:          0
+
+  Latency Statistics (ms):
+    Min:           2.02
+    Max:           34.37
+    Mean:          17.12
+    Median:        18.36
+    Std Dev:       8.04
+    95th %ile:     31.21
+    99th %ile:     34.17
+
+✅ Results saved to load_test_results.json

@@ -3,7 +3,7 @@ use csv::WriterBuilder;
 use crate::metric::Metric;
 use sysinfo::{System, SystemExt, ProcessExt};
 
-const CSV_FILE: &str = "bench.csv";
+const CSV_FILE: &str = "read.csv";
 
 pub fn append_metric_to_csv(metric: &Metric) -> Result<(), std::io::Error> {
     let file_exists = std::path::Path::new(CSV_FILE).exists();

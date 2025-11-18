@@ -1,0 +1,47 @@
+# Flask Endpoints (default port 5000)
+
+## 1. Read All Items
+python load_tester.py --url http://127.0.0.1:5000 --endpoint /read --method GET --iterations 100
+
+## 2. Get Database Info
+python load_tester.py --url http://127.0.0.1:5000 --endpoint /database --method GET --iterations 100
+
+## 3. Create Item
+python load_tester.py --url http://127.0.0.1:5000 --endpoint /create --method POST --iterations 100 --data '{"name": "TestItem", "description": "Test"}'
+
+## 4. Bulk Create (example: 100 items)
+python load_tester.py --url http://127.0.0.1:5000 --endpoint /bulk_create --method POST --iterations 1 --data '[{"name": "Bulk_1", "description": "Bulk item 1"}, {"name": "Bulk_2", "description": "Bulk item 2"}]'
+
+## 5. Update Item (example: update item with id 1)
+python load_tester.py --url http://127.0.0.1:5000 --endpoint /update/1 --method PUT --iterations 100 --data '{"name": "UpdatedName", "description": "Updated"}'
+
+## 6. Delete Item (example: delete item with id 1)
+python load_tester.py --url http://127.0.0.1:5000 --endpoint /delete/1 --method DELETE --iterations 100
+
+# Rust Endpoints (default port 8000, adjust as needed)
+
+## 1. Read All Items
+python load_tester.py --url http://127.0.0.1:8000/api --endpoint /read --method GET --iterations 100
+
+## 2. Get Database Info
+python load_tester.py --url http://127.0.0.1:8000/api --endpoint /database --method GET --iterations 100
+
+## 3. Create Item
+python load_tester.py --url http://127.0.0.1:8000/api --endpoint /create --method POST --iterations 100 --data '{"name": "TestItem", "description": "Test"}'
+
+## 4. Bulk Create (example: 100 items)
+python load_tester.py --url http://127.0.0.1:8000/api --endpoint /bulk_create --method POST --iterations 1 --data '[{"name": "Bulk_1", "description": "Bulk item 1"}, {"name": "Bulk_2", "description": "Bulk item 2"}]'
+
+## 5. Update Item (example: update item with id 1)
+python load_tester.py --url http://127.0.0.1:8000/api --endpoint /update/1 --method PUT --iterations 100 --data '{"name": "UpdatedName", "description": "Updated"}'
+
+## 6. Delete Item (example: delete item with id 1)
+python load_tester.py --url http://127.0.0.1:8000/api --endpoint /delete/1 --method DELETE --iterations 100
+
+# Comprehensive Suite (for Flask or Rust)
+
+## Flask Suite
+python load_tester.py --url http://127.0.0.1:5000 --suite
+
+## Rust Suite
+python load_tester.py --url http://127.0.0.1:8000/api --suite

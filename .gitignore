@@ -7,3 +7,4 @@
 *.jpeg
 **/target/
 *.exe
+*.json

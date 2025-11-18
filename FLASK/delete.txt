@@ -1,0 +1,14 @@
+
+📊 Results for DELETE /delete/1:
+  Total Requests:  100
+  Successful:      100 (100.00%)
+  Failed:          0
+
+  Latency Statistics (ms):
+    Min:           0.00
+    Max:           31.17
+    Mean:          17.57
+    Median:        20.49
+    Std Dev:       7.44
+    95th %ile:     24.80
+    99th %ile:     27.00
