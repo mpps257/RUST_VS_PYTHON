@@ -5,5 +5,5 @@
 *.xlsx
 *.png
 *.jpeg
-*\target\
+**/target/
 *.exe
